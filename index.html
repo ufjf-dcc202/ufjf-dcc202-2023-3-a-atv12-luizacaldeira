@@ -11,8 +11,29 @@
         <h1>DCC 202 - Atividade 12 - Luiza Caldeira</h1>
         <section>
             <form name="entrada">
-                <input name ="fruta"/>
-                <input name = "quantidade"/>
+                <fieldset>
+                    <legend>Origem</legend>
+                    <label><input type="radio" name="origem" value="pomar"checked/>Pomar</label>
+                    <label><input type="radio" name="origem" value="joao"/>João</label>
+                    <label><input type="radio" name="origem" value="maria"/>Maria</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Destino</legend>
+                    <label><input type="radio" name="destino" value="pomar"/>Pomar</label>
+                    <label><input type="radio" name="destino" value="joao"/>João</label>
+                    <label><input type="radio" name="destino" value="maria"checked/>Maria</label>
+                </fieldset>
+
+                <label for="ifruta">Fruta:</label>
+                <select id="ifruta" name ="fruta">
+                    <option value = "maca">Maçã</option>
+                    <option value = "pera">Pêra</option>
+                    <option value = "banana">Banana</option>
+                    <option value = "uva">Uva</option>
+                <label id="iqtd" type="number" name = "quantidade"
+                min="0" max="12" step="1"
+                />
                 <button type="submit">Enviar</button>
 
             </form>
