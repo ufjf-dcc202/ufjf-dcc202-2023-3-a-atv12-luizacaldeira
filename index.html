@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DCC 202 - Atividade 12 - Luiza Caldeira</title>
+    <title>DCC202 - Atividade 12: Luiza Caldeira</title>
     <script type="module" src="main.js"></script>
 </head>
 <body>
     <main>
-        <h1>DCC 202 - Atividade 12 - Luiza Caldeira</h1>
+        <h1>DCC202 - Atividade 12: Luiza Caldeira</h1>
+        <p>Esta é a página principal que usa JavaScript para adicionar iteração.</p>
         <section>
             <form name="entrada">
                 <fieldset>
@@ -28,21 +29,20 @@
                 <label for="ifruta">Fruta:</label>
                 <select id="ifruta" name ="fruta">
                     <option value = "maca">Maçã</option>
-                    <option value = "pera">Pêra</option>
+                    <option value = "pera">Pera</option>
                     <option value = "banana">Banana</option>
                     <option value = "uva">Uva</option>
+                </select>
                 <label for="iqtd">Quantidade:</label> 
-                <input type="number" id = "iqtd" name = "quantidade"
-                min="0" max="12" step="1">
+                <input id = "iqtd" type="number" name = "quantidade" value = "1" min="0" max="12" step="1">
                 <button type="submit">Enviar</button>
             </form>
         </section>
-        <section>
-            <h2>Estoque</h2>
-            <h3>João</h3>
-            <ol id="olJoao"></ol>
-            <h3>Maria</h3>
-            <ol id="olMaria"></ol>
+        <section id = "saida">
+            <h2>João</h2>
+            <ol id="joao"></ol>
+            <h2>Maria</h2>
+            <ol id="maria"></ol>
         </section>
     </main>
 </body>
